@@ -1,0 +1,24 @@
+<section id="habilidades">
+
+  <div id="contenedor_habilidades">
+    <p class="habilidades_titulo" data-aos="flip-up" data-aos-delay="300" data-aos-duration="1000">Habilidades </p>
+    <p class="habilidades_subtitulo" data-aos="flip-up" data-aos-delay="300" data-aos-duration="1000">Tengo
+      conocimientos en las siguientes tecnologías. </p>
+
+    <div class="contenedor_iconos" data-aos="flip-up" data-aos-delay="300" data-aos-duration="1000">
+      @for (habilidad of listaHabilidades; track habilidad.id){
+
+      <div class="iconos">
+        <img id="icono_{{habilidad.nombre}}" class="icono" alt="{{habilidad.nombre}}" src="{{habilidad.icono}}"
+          data-aos="flip-left" data-aos-duration="1000">
+        <div class="icono_nombre">
+          {{habilidad.nombre}}
+        </div>
+      </div>
+      }@empty {<p>No hay habilidades.</p>}
+
+    </div>
+  </div>
+
+
+</section>

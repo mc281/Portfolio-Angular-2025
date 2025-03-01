@@ -1,0 +1,102 @@
+<nav class="navbar">
+  <div class="nav_cont">
+
+    <!-- menu /// -->
+    <div class="nav_menu">
+      <div class="navbar-toggle" (click)="toggleMenu()">
+        <i class="fa-solid fa-bars navbar_menu_icono"></i>
+      </div>
+    </div>
+
+    <!-- menu escondido -->
+    <div class="main-nav-wrap" [ngClass]="estado?'visible' :'no_visible'">
+      <ul class="main-navigation">
+        <li [routerLink]="'/'">
+          Home
+        </li>
+
+        <li [routerLink]="'/projects'">
+          Proyectos
+        </li>
+
+        <li [routerLink]="'/experiencia'">
+          Experiencia
+        </li>
+
+        <li [routerLink]="'/habilidades'">
+          Habilidades
+        </li>
+
+        <li class="contacto_li" [routerLink]="'/contact'">
+          Contacto
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- barra de navegacion -->
+  <ul class="lista_nav">
+    <a [routerLink]="'/home'" class="link_nav" (mouseover)="hover(1)">
+      @if(type1){
+      <ngx-typed-js [strings]="['.about()']">
+        <div id="contenedor_typed">
+          <span class="typing"></span>
+        </div>
+      </ngx-typed-js>
+      }
+      @if(!type1){
+      About
+      }</a>
+    <a [routerLink]="'/experiencia'" class="link_nav" (mouseover)="hover(2)">
+
+      @if(type2){
+      <ngx-typed-js [strings]="['.experiencia()']">
+        <div id="contenedor_typed">
+          <span class="typing"></span>
+        </div>
+      </ngx-typed-js>
+      }
+      @if(!type2){
+      Experiencia
+      }</a>
+
+    <a [routerLink]="'/proyectos'" class="link_nav" (mouseover)="hover(3)">
+      @if(type3){
+      <ngx-typed-js [strings]="['.proyectos()']">
+        <div id="contenedor_typed">
+          <span class="typing"></span>
+        </div>
+      </ngx-typed-js>
+      }
+      @if(!type3){
+      Proyectos
+      }</a>
+
+    <a [routerLink]="'/habilidades'" class="link_nav" (mouseover)="hover(4)">
+      @if(type4){
+      <ngx-typed-js [strings]="['.habilidades()']">
+        <div id="contenedor_typed">
+          <span class="typing"></span>
+        </div>
+      </ngx-typed-js>
+      }
+      @if(!type4){
+      Habilidades
+      }</a>
+    <a [routerLink]="'/contact'" class="link_nav" (mouseover)="hover(5)">
+      @if(type5){
+      <ngx-typed-js [strings]="['.contacto()']">
+        <div id="contenedor_typed">
+          <span class="typing"></span>
+        </div>
+      </ngx-typed-js>
+      }
+      @if(!type5){
+      Contacto
+      }</a>
+  </ul>
+
+  <div class="otro_link">
+    <a href="https://github.com/mc2282" target="_blank" class="otro_link_a gradient-border">Github</a>
+  </div>
+</nav>

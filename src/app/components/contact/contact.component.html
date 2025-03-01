@@ -1,0 +1,29 @@
+<!-- Sección Contacto -->
+<section id="contacto">
+
+  <div class="container_contacto">
+    <div class="text_contact">Contacto</div>
+    <div class="text_description">No dudes en contactarme!</div>
+
+    <form class="form_contacto" [formGroup]="formulario" (ngSubmit)="enviarEmail()">
+      <div class="label_email">Enviame un e-mail 🚀</div>
+      <input placeholder="Email" formControlName="email" type="email" id="input_email">
+      <input placeholder="Nombre" formControlName="nombre" type="text" id="input_name">
+      <input placeholder="Asunto" formControlName="asunto" type="text" id="input_subject">
+      <textarea placeholder="Mensaje" formControlName="mensaje" class="textarea_mensaje">
+  </textarea>
+
+      <div class="contenedor_link">
+        <button type="submit" id="btnEnviar">
+          Enviar</button>
+      </div>
+
+    </form>
+
+    @if(formStatus){
+    <p>{{ formStatus }}</p>
+    }
+
+  </div>
+
+</section>

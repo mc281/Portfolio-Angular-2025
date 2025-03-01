@@ -1,0 +1,43 @@
+<section id="proyectos">
+  <div class="proyectos_contenido">
+    <h2 id="proyectos_titulo">Proyectos</h2>
+    <!--<p id="proyectos_descripcion" data-aos="fade-up"></p>-->
+
+    <div class="contenedor_cards">
+      @for(proyecto of listaProyectos; track proyecto.id){
+      <div class="card">
+        <img src="{{proyecto.imagen}}" class="card_imagen">
+
+        <div class="contenedor_tecnologias">
+          <span class="tecnologia">{{proyecto.tecnologia1}}</span><span
+            class="tecnologia">{{proyecto.tecnologia2}}</span><span class="tecnologia">{{proyecto.tecnologia3}}
+          </span>
+        </div>
+
+        <div class="card_content">
+          <div class="card_title">{{proyecto.titulo}}</div>
+          <div class="card_description">{{proyecto.descripcion}}
+          </div>
+        </div>
+        <div class="contenedor_links">
+          <div class="contenedor_link" data-aos="fade-up">
+            <a href="{{proyecto.linkCode}}" class="linkPreview gradient-border"><i
+                class="fa-brands fa-github icon_link"></i>
+              Code</a>
+          </div>
+          <div class="contenedor_link" data-aos="fade-up">
+            <a href="{{proyecto.linkPreview}}" class="linkPreview gradient-border"><i
+                class="fa-solid fa-link icon_link"></i>
+              Preview</a>
+          </div>
+        </div>
+
+
+      </div>
+      }@empty {<p>No hay proyectos.</p>}
+
+    </div>
+
+
+  </div>
+</section>

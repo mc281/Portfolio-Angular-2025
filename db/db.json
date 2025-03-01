@@ -1,0 +1,166 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "titulo": "Encriptador de Texto",
+      "tecnologia1": "JavaScript",
+      "tecnologia2": "CSS3",
+      "tecnologia3": "NodeJS",
+      "descripcion": "Aplicación Web del Proyecto ONE de Oracle+Alura LATAM desarrollada con tecnología HTML5, CSS3 y JavaScript, cuya función es encriptar y desencriptar un texto",
+      "imagen": "images/proyecto_alura.webp",
+      "linkCode": "https://github.com/mc2282/JuegoPPT",
+      "linkPreview": "https://mc2282.github.io/JuegoPPT/"
+    },
+    {
+      "id": "2",
+      "titulo": "Juego Blackjack",
+      "tecnologia1": "JavaScript",
+      "tecnologia2": "CSS3",
+      "tecnologia3": "Vite",
+      "descripcion": "Desarrollo del juego clásico de Blackjack utilizando JavaScript, con jugabilidad interactiva y seguimiento de puntajes en tiempo real. Empleo de funciones modulares de JavaScript para gestionar diferentes aspectos del juego, incluyendo la creación del mazo, el reparto de cartas, el cálculo del valor de las cartas, la creación de HTML para las cartas y la lógica del turno del computador.",
+      "imagen": "images/proyecto_blackjack.webp",
+      "linkCode": "https://github.com/mc2282/JS-Blackjack",
+      "linkPreview": "https://blackjack-js-vite-app.netlify.app/"
+    },
+    {
+      "id": "3",
+      "titulo": "Juego Piedra, Papel o Tijera",
+      "tecnologia1": "JavaScript",
+      "tecnologia2": "CSS3",
+      "tecnologia3": "HTML5",
+      "descripcion": "Desarrollado con Javascript, CSS3 y HTML5",
+      "imagen": "images/proyecto_ppt.webp",
+      "linkCode": "https://github.com/mc2282/JuegoPPT",
+      "linkPreview": "https://mc2282.github.io/JuegoPPT/"
+    },
+    {
+      "id": "4",
+      "titulo": "Tareas List",
+      "tecnologia1": "JavaScript",
+      "tecnologia2": "NodeJS",
+      "tecnologia3": "Angular",
+      "descripcion": "Aplicación desarrollada con HTML5, CSS3, JavaScript y Angular que permite la gestion de tareas y el almacenamiento de las mismas, simulando una base de datos con un servidor json",
+      "imagen": "images/proyecto_tareas.webp",
+      "linkCode": "https://github.com/mc2282/TareasList",
+      "linkPreview": "https://mc2282.github.io/TareasList"
+    }
+  ],
+  "experiencia": [
+    {
+      "id": "1",
+      "titulo": "Desarrollo Web de una Landing Page para una PyME de Sushi",
+      "empresa": "MDP Programa",
+      "fecha": "Diciembre 2023 - Febrero 2024",
+      "descripcion": "Diseño y desarrollo grupal de una landing page profesional para una PyME especializada en la elaboración y comercialización de sushi. La página está optimizada para promover los productos, resaltar la calidad y atraer nuevos clientes",
+      "habilidad1": "JavaScript",
+      "habilidad2": "HTML5",
+      "habilidad3": "CSS3",
+      "habilidad4": "NodeJS"
+    },
+    {
+      "id": "2",
+      "titulo": "Desarrollo en C# Gestión de un gimnasio",
+      "empresa": "IFTS",
+      "fecha": "Agosto 2023 - Noviembre 2023",
+      "descripcion": "Desarrollo grupal de una aplicación en C# para gestionar usuarios afiliados y no afiliados en un gimnasio, permitiendo registrar, modificar y consultar datos de usuarios. Implementación de clases para la gestión de afiliación, incluyendo atributos como fecha de registro y tipo de plan, y funcionalidades como conversión de usuarios y búsqueda avanzada. Almacenamiento de usuarios e información de cobro en base de datos MySQL",
+      "habilidad1": "C#",
+      "habilidad2": ".NET",
+      "habilidad3": "MySQL",
+      "habilidad4": "UML"
+    },
+    {
+      "id": "3",
+      "titulo": "Desarrollo de aplicación de Android Gestión de un gimnasio",
+      "empresa": "IFTS",
+      "fecha": "Marzo 2024 - Julio 2024",
+      "descripcion": "Desarrollo colaborativo de una aplicación móvil en Kotlin para la gestión de usuarios afiliados y no afiliados en un gimnasio, con funcionalidades para registrar, modificar y consultar datos de los usuarios. Implementación de una interfaz de usuario intuitiva y moderna diseñada en Figma.",
+      "habilidad1": "Figma",
+      "habilidad2": "Android Studio",
+      "habilidad3": "Kotlin",
+      "habilidad4": ""
+    },
+    {
+      "id": "4",
+      "titulo": "Full-Stack Aplicación Web de Comercio",
+      "empresa": "IFTS",
+      "fecha": "Agosto 2024 - Noviembre 2024",
+      "descripcion": "Desarrollo grupal de una aplicación web full-stack para un comercio, implementando tanto el frontend como el backend. Utilización de MongoDB para almacenamiento de datos y aseguramiento de la funcionalidad mediante pruebas con Jest y Supertest. La aplicación permite gestionar productos, usuarios y transacciones de manera eficiente y escalable, con un enfoque en la calidad del código mediante pruebas automatizadas.",
+      "habilidad1": "JavaScript",
+      "habilidad2": "Postman",
+      "habilidad3": "NodeJS",
+      "habilidad4": "MongoDB"
+    }
+  ],
+  "habilidades": [
+    {
+      "id": "1",
+      "nombre": "HTML",
+      "icono": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+    },
+    {
+      "id": "2",
+      "nombre": "CSS",
+      "icono": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+    },
+    {
+      "id": "3",
+      "nombre": "JavaScript",
+      "icono": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+    },
+    {
+      "id": "4",
+      "nombre": "TypeScript",
+      "icono": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+    },
+    {
+      "id": "5",
+      "nombre": "C#",
+      "icono": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+    },
+    {
+      "id": "6",
+      "nombre": "Node.js",
+      "icono": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+    },
+    {
+      "id": "7",
+      "nombre": "MySQL",
+      "icono": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+    },
+    {
+      "id": "8",
+      "nombre": "MongoDB",
+      "icono": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+    },
+    {
+      "id": "9",
+      "nombre": "Angular",
+      "icono": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"
+    },
+    {
+      "id": "10",
+      "nombre": "Blender",
+      "icono": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blender/blender-original.svg"
+    },
+    {
+      "id": "11",
+      "nombre": "Bootstrap",
+      "icono": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+    },
+    {
+      "id": "12",
+      "nombre": "Photoshop",
+      "icono": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg"
+    },
+    {
+      "id": "13",
+      "nombre": "Postman",
+      "icono": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
+    },
+    {
+      "id": "14",
+      "nombre": "GitHub",
+      "icono": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-white-icon.png"
+    }
+  ]
+}

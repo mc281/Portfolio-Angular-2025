@@ -1,0 +1,135 @@
+#home {
+  display: block;
+}
+
+.contenedor_divs {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.div_izq {
+  flex-grow: 2;
+  text-align: left;
+  padding: 40px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.div_der {
+  flex: 0;
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: end;
+  justify-content: end;
+  gap: 12px;
+}
+
+.titulo {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--text-primary-color);
+  line-height: 68px;
+  font-weight: bold;
+  background: var(--text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitulo {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 25px;
+  display: flex;
+  gap: 12px;
+  color: var(--text-primary-color);
+}
+
+.descripcion {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 42px;
+  color: var(--text-secondary-color);
+}
+
+#btnProyectos,
+#btnLinkedin {
+  box-sizing: border-box;
+  text-decoration: none;
+  width: auto;
+  height: auto;
+  max-width: 200px;
+  text-align: center;
+  padding: 1em;
+  color: var(--text-primary-color);
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  background: var(--background-color);
+  transition: 0.2s ease-in-out !important;
+  margin-right: 0.6em;
+}
+
+#btnProyectos:hover,
+#btnLinkedin:hover {
+  background-color: var(--tertiary-color);
+}
+
+.contenedor_links {
+  display: flex;
+  flex-direction: row;
+}
+
+#contenedor_typed {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--background-color);
+}
+
+@media (max-width: 768px) {
+  #home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #contenedor_typed {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .contenedor_divs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div_izq {
+    text-align: center;
+    padding: 15px;
+  }
+
+  .contenedor_link {
+    display: flex;
+    justify-content: center;
+  }
+
+  #btnProyectos {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+}
+
+.fa-long-arrow-alt-right {
+  font-size: 10px;
+  margin-left: 1.1em;
+  margin-top: 4px;
+}
