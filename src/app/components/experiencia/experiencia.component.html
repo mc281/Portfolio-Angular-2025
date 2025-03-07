@@ -1,21 +1,21 @@
 <section id="experiencia">
-  <div class="contenedor_experiencia">
-    <div class="experiencia_titulo">Experiencia</div>
-    <div class="experiencia_subtitulo">Mi experiencia en el campo IT.</div>
+  <div class="contenedor_experiencia ">
+    <!--<div class="experiencia_titulo">Experiencia</div>-->
+    <h3 class="titulo_seccion">Mi experiencia en el campo IT.</h3>
 
     <div class="contenedor_timeline">
       <ul class="experiencia_ul">
 
         @for(exp of listaExperiencia; track exp.id){
-        <li class="experiencia_li">
+        <li class="experiencia_li ">
           <div class="contenedor_linea">
-            <span class="circulo">
+            <span class="circulo gradient-border">
             </span>
-            <span class="linea">
+            <span class="linea gradient-border">
             </span>
           </div>
-          <div class="contenedor_trabajo">
-            <div class="contenedor2_trabajo">
+          <div class="contenedor_trabajo ">
+            <div class="contenedor2_trabajo gradient-border">
               <div class="trabajo_p1">
                 <div class="trabajo">
                   <div class="trabajo_titulo">{{exp.titulo}}</div>

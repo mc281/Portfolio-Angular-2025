@@ -121,7 +121,7 @@
 /*menu*/
 .nav_menu {
   font-size: 22px;
-
+  display: block;
 }
 
 .navbar_menu_icono {

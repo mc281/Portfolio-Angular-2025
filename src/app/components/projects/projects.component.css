@@ -28,6 +28,7 @@
   font-weight: 600;
   margin-top: 20px;
   color: var(--text-primary-color);
+  padding: 1em;
 }
 
 #proyectos_descripcion {
@@ -43,7 +44,7 @@
   margin: 0;
   width: 330px;
   height: 490px;
-  background-color: var(--card-background-color);
+  background-color: var(--background-color);
   cursor: pointer;
   border-radius: 10px;
   /*

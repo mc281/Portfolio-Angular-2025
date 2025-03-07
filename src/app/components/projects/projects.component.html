@@ -1,11 +1,14 @@
 <section id="proyectos">
   <div class="proyectos_contenido">
-    <h2 id="proyectos_titulo">Proyectos</h2>
-    <!--<p id="proyectos_descripcion" data-aos="fade-up"></p>-->
+    <!--<h2 id="proyectos_titulo">Proyectos</h2>-->
+    <h3 class="titulo_seccion">Hola! Bienvenido/a a mi portfolio. Estos son algunos de los
+      proyectos que he
+      realizado:
+    </h3>
 
     <div class="contenedor_cards">
       @for(proyecto of listaProyectos; track proyecto.id){
-      <div class="card">
+      <div class="card ">
         <img src="{{proyecto.imagen}}" class="card_imagen">
 
         <div class="contenedor_tecnologias">
@@ -20,12 +23,12 @@
           </div>
         </div>
         <div class="contenedor_links">
-          <div class="contenedor_link" data-aos="fade-up">
+          <div class="contenedor_link">
             <a href="{{proyecto.linkCode}}" class="linkPreview gradient-border"><i
                 class="fa-brands fa-github icon_link"></i>
               Code</a>
           </div>
-          <div class="contenedor_link" data-aos="fade-up">
+          <div class="contenedor_link">
             <a href="{{proyecto.linkPreview}}" class="linkPreview gradient-border"><i
                 class="fa-solid fa-link icon_link"></i>
               Preview</a>
