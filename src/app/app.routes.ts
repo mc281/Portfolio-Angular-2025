@@ -1,3 +1,4 @@
+
 import { Routes } from '@angular/router';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 
@@ -8,16 +9,16 @@ export const routes: Routes = [
   }
   ,
   {
-    path: 'experiencia',
-    loadComponent: () => import('./pages/experiencia-page/experiencia-page.component').then(m => m.ExperienciaPageComponent)
+    path: 'experience',
+    loadComponent: () => import('./pages/experience-page/experience-page.component').then(m => m.ExperiencePageComponent)
   },
   {
     path: 'projects',
     loadComponent: () => import('./pages/projects-page/projects-page.component').then(m => m.ProjectsPageComponent)
   },
   {
-    path: 'habilidades',
-    loadComponent: () => import('./pages/habilidades-page/habilidades-page.component').then(m => m.HabilidadesPageComponent)
+    path: 'skills',
+    loadComponent: () => import('./pages/skills-page/skills-page.component').then(m => m.SkillsPageComponent)
   },
   {
     path: 'contact',

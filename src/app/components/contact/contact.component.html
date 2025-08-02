@@ -1,28 +1,60 @@
 <!-- Sección Contacto -->
-<section id="contacto">
+<section id="contact" class="section-contact style-1 section spacing-6">
 
-  <div class="container_contacto">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="heading-section mb_44">
+        <div class="tag-heading">
+          Contacto
+        </div>
 
+        <div class="title mb_40">
+          <h3 class="text_white fw-5 animationtext clip
+          "> Formulario de
+            <span class="tf-text s1 cd-words-wrapper text_primary-color" style="width: 113.338px;">
+              <span class="item-text is-hidden ">Contacto</span>
+            </span>
+          </h3>
 
-    <form class="form_contacto" [formGroup]="formulario" (ngSubmit)="enviarEmail()">
-      <div class="label_email">Contactame 🚀</div>
-      <input placeholder="Email" formControlName="email" type="email" id="input_email">
-      <input placeholder="Nombre" formControlName="nombre" type="text" id="input_name">
-      <input placeholder="Asunto" formControlName="asunto" type="text" id="input_subject">
-      <textarea placeholder="Mensaje" formControlName="mensaje" class="textarea_mensaje">
-  </textarea>
+          <div class="col-lg-12">
+            <form class="form-contact bs-light-mode" [formGroup]="formulario" (ngSubmit)="enviarEmail()">
 
-      <div class="contenedor_link">
-        <button type="submit" id="btnEnviar">
-          Enviar</button>
+              <div class="d-grid gap_24 mb_24">
+                <fieldset class>
+                  <input placeholder="Email" formControlName="email" type="email" id="email" tabindex="2"
+                    aria-required="true">
+                </fieldset>
+
+                <fieldset class>
+                  <input placeholder="Nombre" formControlName="nombre" type="text" id="name" tabindex="2"
+                    aria-required="true">
+                </fieldset>
+
+                <fieldset class>
+                  <input placeholder="Asunto" formControlName="asunto" type="text" id="subject" tabindex="2"
+                    aria-required="true">
+                </fieldset>
+
+                <fieldset class>
+                  <textarea id="message" placeholder="Mensaje" formControlName="mensaje" class="textarea_mensaje"
+                    aria-required="true" tabindex="2" class rows="4">
+            </textarea>
+                </fieldset>
+              </div>
+
+              <div class="button-submit">
+                <button class="btnSubmit tf-btn style-1 animate-hover-btn" type="submit">
+                  <span>Enviar!</span></button>
+              </div>
+            </form>
+
+            @if(formStatus){
+            <p>{{ formStatus }}</p>
+            }
+          </div>
+
+        </div>
       </div>
-
-    </form>
-
-    @if(formStatus){
-    <p>{{ formStatus }}</p>
-    }
-
+    </div>
   </div>
-
 </section>

@@ -1,0 +1,36 @@
+<div class="col-lg-8">
+  <!-- section-resume-->
+  <div id="resume" class="section-resume style-1 pb-0 section">
+    <div class="heading-section mb_47">
+      <div class="tag-heading">
+        Experiencia
+      </div>
+      <h3 class="title_exp text_white fw-5 split-text effect-blur-fade" aria-label="Education &amp; Experience">
+        Educación y
+        Experiencia
+      </h3>
+    </div>
+
+    <div class="effect-line-hover">
+      @for(exp of listaExperiencia; track exp.id){
+      <div class="wrap-education-item area-effect scrolling-effect effectTop">
+        <span class="point"></span>
+        <div class="education-item">
+          <div class="content">
+            <h5 class="font-4 mb_4"><a href="#contact" class="link">{{exp.titulo}}</a></h5>
+            <span class="text-body-1 font-3">{{exp.empresa}}</span>
+          </div>
+          <div class="date text-caption-1 text_white font-3">
+            {{exp.fecha}}
+          </div>
+          <div class="item-shape spotlight">
+            <img src="images/item/small-comet.webp" loading="lazy" decoding="async" alt="item">
+          </div>
+        </div>
+      </div>
+      }
+
+    </div>
+  </div>
+  <!-- End section-resume -->
+</div>

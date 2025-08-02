@@ -1,46 +1,33 @@
-<section id="proyectos">
-  <div class="proyectos_contenido">
-    <!--<h2 id="proyectos_titulo">Proyectos</h2>-->
-    <h3 class="titulo_seccion">Hola! Bienvenido/a a mi portfolio. Estos son algunos de los
-      proyectos que he
-      realizado:
-    </h3>
-
-    <div class="contenedor_cards">
-      @for(proyecto of listaProyectos; track proyecto.id){
-      <div class="card ">
-        <img src="{{proyecto.imagen}}" class="card_imagen">
-
-        <div class="contenedor_tecnologias">
-          <span class="tecnologia">{{proyecto.tecnologia1}}</span><span
-            class="tecnologia">{{proyecto.tecnologia2}}</span><span class="tecnologia">{{proyecto.tecnologia3}}
-          </span>
-        </div>
-
-        <div class="card_content">
-          <div class="card_title">{{proyecto.titulo}}</div>
-          <div class="card_description">{{proyecto.descripcion}}
-          </div>
-        </div>
-        <div class="contenedor_links">
-          <div class="contenedor_link">
-            <a href="{{proyecto.linkCode}}" class="linkPreview gradient-border"><i
-                class="fa-brands fa-github icon_link"></i>
-              Code</a>
-          </div>
-          <div class="contenedor_link">
-            <a href="{{proyecto.linkPreview}}" class="linkPreview gradient-border"><i
-                class="fa-solid fa-link icon_link"></i>
-              Preview</a>
-          </div>
-        </div>
-
-
-      </div>
-      }@empty {<p>No hay proyectos.</p>}
-
+<div id="portfolio" class="section-portfolio style-1 spacing-5 section">
+  <div class="heading-section mb_42">
+    <div class="tag-heading">
+      Portfolio
     </div>
+    <h3 class="text_white fw-5  split-text effect-blur-fade" aria-label="Featured Projects" style="perspective: 400px;">
 
-
+      <div class="title_projects" aria-hidden="true">
+        Proyectos Realizados</div>
+    </h3>
   </div>
-</section>
+
+  <div class="tabs-content-wrap tf-grid-layout md-col-2">
+
+    @for(project of projects; track project.id){
+    <div class="portfolio-item">
+      <a href={{project.linkPreview}} data-fancybox="gallery" class="img-style">
+        <img class="project_image" decoding="async" loading="lazy" src={{project.imagen}} srcset={{project.imagen}}
+          alt="Portfolio Image">
+        <div class="tag font-3 text-label text-uppercase fw-6 letter-spacing-1">
+          {{project.tecnologia1}}, {{project.tecnologia2}}, {{project.tecnologia3}}
+        </div>
+      </a>
+      <h5 class="title font-4 text_white">
+        <a href={{project.linkPreview}} class="link">{{project.titulo}}</a>
+      </h5>
+      <div class="item-shape spotlight" style="opacity: 1;">
+        <img src="/public/images/item/small-comet.webp" loading="lazy" decoding="async" alt="item">
+      </div>
+    </div>
+    }
+  </div>
+</div>

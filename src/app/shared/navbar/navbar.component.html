@@ -1,91 +1,158 @@
-<nav class="navbar">
-  <div class="nav_cont">
-
-    <!-- menu /// -->
-    <div class="nav_menu">
-      <div class="navbar-toggle" (click)="toggleMenu()">
-        <i class="fa-solid fa-bars navbar_menu_icono"></i>
+<header class="header header-fixed style-1 is-fixed">
+  <div class="tf-container w-6">
+    <div class="header-sidebar style-1">
+      <div class="box">
       </div>
-    </div>
+      <ul class="nav-menu style-1 lg-hide">
+        <li class="text-menu text_white">
+          <a href="#home" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6 active">
+            <span class="text words chars splitting" data-splitting="" style="--word-total: 1; --char-total: 5;"><span
+                class="word" data-word="About" style="--word-index: 0;"><span class="char" data-char="A"
+                  style="--char-index: 0;">A</span><span class="char" data-char="b"
+                  style="--char-index: 1;">b</span><span class="char" data-char="o"
+                  style="--char-index: 2;">o</span><span class="char" data-char="u"
+                  style="--char-index: 3;">u</span><span class="char" data-char="t"
+                  style="--char-index: 4;">t</span></span></span>
+            <span class="text words chars splitting" data-splitting="" style="--word-total: 1; --char-total: 5;"><span
+                class="word" data-word="About" style="--word-index: 0;"><span class="char" data-char="A"
+                  style="--char-index: 0;">A</span><span class="char" data-char="b"
+                  style="--char-index: 1;">b</span><span class="char" data-char="o"
+                  style="--char-index: 2;">o</span><span class="char" data-char="u"
+                  style="--char-index: 3;">u</span><span class="char" data-char="t"
+                  style="--char-index: 4;">t</span></span></span>
+          </a>
+        </li>
+        <li class="text-menu text_white">
+          <a href="#resume" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
+            <span class="text words chars splitting" data-splitting="" style="--word-total: 1; --char-total: 6;"><span
+                class="word" data-word="Experiencia" style="--word-index: 0;"><span class="char" data-char="R"
+                  style="--char-index: 0;">E</span><span class="char" data-char="e"
+                  style="--char-index: 1;">x</span><span class="char" data-char="s"
+                  style="--char-index: 2;">p</span><span class="char" data-char="u"
+                  style="--char-index: 3;">e</span><span class="char" data-char="m"
+                  style="--char-index: 4;">r</span><span class="char" data-char="e"
+                  style="--char-index: 5;">i</span></span>
 
-    <!-- menu escondido -->
-    <div class="main-nav-wrap" [ngClass]="estado?'visible' :'no_visible'">
-      <ul class="main-navigation">
+              <span class="char" data-char="u" style="--char-index: 6;">e</span><span class="char" data-char="m"
+                style="--char-index: 7;">n</span><span class="char" data-char="e" style="--char-index: 5;">c</span>
+              <span class="char" data-char="u" style="--char-index: 8;">i</span><span class="char" data-char="m"
+                style="--char-index: 9;">a</span>
 
-        <li [routerLink]="'/projects'">
-          Proyectos
+            </span>
+            <span class="text words chars splitting" data-splitting="" style="--word-total: 1; --char-total: 6;"><span
+                class="word" data-word="Experiencia" style="--word-index: 0;"><span class="char" data-char="E"
+                  style="--char-index: 0;">E</span>
+                <span class="char" data-char="x" style="--char-index: 1;">x</span>
+                <span class="char" data-char="p" style="--char-index: 2;">p</span>
+                <span class="char" data-char="e" style="--char-index: 3;">e</span><span class="char" data-char="r"
+                  style="--char-index: 4;">r</span><span class="char" data-char="i"
+                  style="--char-index: 5;">i</span></span>
+
+              <span class="char" data-char="e" style="--char-index: 6;">e</span><span class="char" data-char="n"
+                style="--char-index: 7;">n</span><span class="char" data-char="c" style="--char-index: 5;">c</span>
+              <span class="char" data-char="i" style="--char-index: 8;">i</span><span class="char" data-char="a"
+                style="--char-index: 9;">a</span>
+            </span>
+          </a>
+        </li>
+        <li class="text-menu text_white">
+          <a href="#skills" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
+            <span class="text words chars splitting" data-splitting="" style="--word-total: 1; --char-total: 8;"><span
+                class="word" data-word="Habilidades" style="--word-index: 0;">
+                <span class="char" data-char="H" style="--char-index: 0;">H</span><span class="char" data-char="a"
+                  style="--char-index: 1;">a</span><span class="char" data-char="b"
+                  style="--char-index: 2;">b</span><span class="char" data-char="i"
+                  style="--char-index: 3;">i</span><span class="char" data-char="l"
+                  style="--char-index: 4;">l</span><span class="char" data-char="i"
+                  style="--char-index: 5;">i</span></span>
+
+              <span class="char" data-char="d" style="--char-index: 6;">d</span><span class="char" data-char="c"
+                style="--char-index: 7;">a</span>
+              <span class="char" data-char="d" style="--char-index: 8;">d</span><span class="char" data-char="e"
+                style="--char-index: 9;">e</span>
+              <span class="char" data-char="s" style="--char-index: 9;">s</span>
+            </span>
+            <span class="text words chars splitting" data-splitting="" style="--word-total: 1; --char-total: 8;"><span
+                class="word" data-word="Habilidades" style="--word-index: 0;"> <span class="char" data-char="H"
+                  style="--char-index: 0;">H</span><span class="char" data-char="a"
+                  style="--char-index: 1;">a</span><span class="char" data-char="b"
+                  style="--char-index: 2;">b</span><span class="char" data-char="i"
+                  style="--char-index: 3;">i</span><span class="char" data-char="l"
+                  style="--char-index: 4;">l</span><span class="char" data-char="i"
+                  style="--char-index: 5;">i</span></span>
+
+              <span class="char" data-char="d" style="--char-index: 6;">d</span><span class="char" data-char="c"
+                style="--char-index: 7;">a</span>
+              <span class="char" data-char="d" style="--char-index: 8;">d</span><span class="char" data-char="e"
+                style="--char-index: 9;">e</span>
+              <span class="char" data-char="s" style="--char-index: 9;">s</span></span>
+          </a>
+        </li>
+        <li class="text-menu text_white">
+          <a href="#portfolio" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
+            <span class="text words chars splitting" data-splitting="" style="--word-total: 1; --char-total: 9;"><span
+                class="word" data-word="Portfolio" style="--word-index: 0;"><span class="char" data-char="P"
+                  style="--char-index: 0;">P</span><span class="char" data-char="o"
+                  style="--char-index: 1;">o</span><span class="char" data-char="r"
+                  style="--char-index: 2;">r</span><span class="char" data-char="t"
+                  style="--char-index: 3;">t</span><span class="char" data-char="f"
+                  style="--char-index: 4;">f</span><span class="char" data-char="o"
+                  style="--char-index: 5;">o</span><span class="char" data-char="l"
+                  style="--char-index: 6;">l</span><span class="char" data-char="i"
+                  style="--char-index: 7;">i</span><span class="char" data-char="o"
+                  style="--char-index: 8;">o</span></span></span>
+
+            <span class="text words chars splitting" data-splitting="" style="--word-total: 1; --char-total: 9;"><span
+                class="word" data-word="Portfolio" style="--word-index: 0;"><span class="char" data-char="P"
+                  style="--char-index: 0;">P</span><span class="char" data-char="o"
+                  style="--char-index: 1;">o</span><span class="char" data-char="r"
+                  style="--char-index: 2;">r</span><span class="char" data-char="t"
+                  style="--char-index: 3;">t</span><span class="char" data-char="f"
+                  style="--char-index: 4;">f</span><span class="char" data-char="o"
+                  style="--char-index: 5;">o</span><span class="char" data-char="l"
+                  style="--char-index: 6;">l</span><span class="char" data-char="i"
+                  style="--char-index: 7;">i</span><span class="char" data-char="o"
+                  style="--char-index: 8;">o</span></span></span>
+          </a>
         </li>
 
-        <li [routerLink]="'/experiencia'">
-          Experiencia
-        </li>
+        <li class="text-menu text_white">
+          <a href="#contact" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
 
-        <li [routerLink]="'/habilidades'">
-          Habilidades
-        </li>
+            <span class="text words chars splitting" data-splitting="" style="--word-total: 1; --char-total: 7;"><span
+                class="word" data-word="Contacto" style="--word-index: 0;"><span class="char" data-char="C"
+                  style="--char-index: 0;">C</span><span class="char" data-char="o"
+                  style="--char-index: 1;">o</span><span class="char" data-char="n"
+                  style="--char-index: 2;">n</span><span class="char" data-char="t"
+                  style="--char-index: 3;">t</span><span class="char" data-char="a"
+                  style="--char-index: 4;">a</span><span class="char" data-char="c"
+                  style="--char-index: 5;">c</span><span class="char" data-char="t" style="--char-index: 6;">t</span>
+                <span class="char" data-char="o" style="--char-index: 7;">o</span>
+              </span></span>
 
-        <li class="contacto_li" [routerLink]="'/contact'">
-          Contacto
+            <span class="text words chars splitting" data-splitting="" style="--word-total: 1; --char-total: 7;"><span
+                class="word" data-word="Contacto" style="--word-index: 0;"><span class="char" data-char="C"
+                  style="--char-index: 0;">C</span><span class="char" data-char="o"
+                  style="--char-index: 1;">o</span><span class="char" data-char="n"
+                  style="--char-index: 2;">n</span><span class="char" data-char="t"
+                  style="--char-index: 3;">t</span><span class="char" data-char="a"
+                  style="--char-index: 4;">a</span><span class="char" data-char="c" style="--char-index: 5;">c</span>
+                <span class="char" data-char="t" style="--char-index: 6;">t</span>
+                <span class="char" data-char="o" style="--char-index: 7;">o</span>
+              </span>
+            </span>
+          </a>
         </li>
       </ul>
+
+      <!--GitHub link-->
+      <div class=" d-flex gap_12 align-items-center">
+        <a href="https://github.com/mc281" id="contact-btn" class="tf-btn style-1 animate-hover-btn">
+          <span>
+            GitHub
+          </span>
+        </a>
+      </div>
     </div>
   </div>
-
-  <!-- barra de navegacion -->
-  <ul class="lista_nav">
-
-
-
-    <a [routerLink]="'/projects'" class="link_nav" (mouseover)="hover(3)">
-      @if(type3){
-      <ngx-typed-js [strings]="['.proyectos()']">
-        <div id="contenedor_typed">
-          <span class="typing"></span>
-        </div>
-      </ngx-typed-js>
-      }
-      @if(!type3){
-      Portfolio
-      }</a>
-    <a [routerLink]="'/experiencia'" class="link_nav" (mouseover)="hover(2)">
-
-      @if(type2){
-      <ngx-typed-js [strings]="['.experiencia()']">
-        <div id="contenedor_typed">
-          <span class="typing"></span>
-        </div>
-      </ngx-typed-js>
-      }
-      @if(!type2){
-      Experiencia
-      }</a>
-    <a [routerLink]="'/habilidades'" class="link_nav" (mouseover)="hover(4)">
-      @if(type4){
-      <ngx-typed-js [strings]="['.habilidades()']">
-        <div id="contenedor_typed">
-          <span class="typing"></span>
-        </div>
-      </ngx-typed-js>
-      }
-      @if(!type4){
-      Habilidades
-      }</a>
-
-    <a [routerLink]="'/contact'" class="link_nav" (mouseover)="hover(5)">
-      @if(type5){
-      <ngx-typed-js [strings]="['.contacto()']">
-        <div id="contenedor_typed">
-          <span class="typing"></span>
-        </div>
-      </ngx-typed-js>
-      }
-      @if(!type5){
-      Contacto
-      }</a>
-
-  </ul>
-
-  <div class="otro_link">
-    <a href="https://github.com/mc2282" target="_blank" class="otro_link_a gradient-border">Github</a>
-  </div>
-</nav>
+</header>

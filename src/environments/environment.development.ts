@@ -1,5 +1,5 @@
 export const environment = {
   urlProjects: 'http://localhost:3000/projects',
-  urlExperiencia: 'http://localhost:3000/experiencia',
-  urlHabilidades: 'http://localhost:3000/habilidades'
+  urlExperience: 'http://localhost:3000/experience',
+  urlSkills: 'http://localhost:3000/skills'
 };
