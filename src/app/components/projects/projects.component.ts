@@ -106,14 +106,25 @@ export class ProjectsComponent {
     },
     {
       "id": "9",
-      "titulo": "Gestor de Recetas",
+      "titulo": "Algoritmos de Ordenamiento",
       "tecnologia1": "JavaScript",
       "tecnologia2": "CSS",
-      "tecnologia3": "API",
-      "descripcion": "Aplicación que le permite al usuario crear y eliminar recetas de una plataforma, por medio de una API.",
-      "imagen": " ",
-      "linkCode": " ",
-      "linkPreview": " "
+      "tecnologia3": "Bootstrap",
+      "descripcion": "Ordenamiento de números ingresados por el usuario, mediante distintos algoritmos de ordenamiento.",
+      "imagen": "images/projects/proyecto_algoritmos-ordenamiento.webp",
+      "linkCode": "https://github.com/mc281/algoritmos-ordenamiento",
+      "linkPreview": "https://mc281.github.io/algoritmos-ordenamiento/"
+    },
+       {
+      "id": "10",
+      "titulo": "Gestor de Recetas WPF",
+      "tecnologia1": "C#
+      "tecnologia2": "WPF",
+      "tecnologia3": "XAML",
+      "descripcion": "App de escritorio que gestiona recetas del usuario, calendario de comidas, alacena y nutrientes de cada comida. Reportes nutricionales diarios y semanales. Importación de recetas desde diversas páginas (AllRecipes, BBC Food, Simply Recipe, etc.). Importación de ingredientes (Excel).",
+      "imagen": "images/projects/proyecto_recipe-manager-csharp.webp",
+      "linkCode": "https://github.com/mc281/recipe-manager-csharp",
+      "linkPreview": ""
     }
   ]
 
